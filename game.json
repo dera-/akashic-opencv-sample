@@ -1,0 +1,59 @@
+{
+	"width": 1280,
+	"height": 720,
+	"fps": 30,
+	"main": "./script/main.js",
+	"assets": {
+		"player": {
+			"type": "image",
+			"width": 32,
+			"height": 32,
+			"path": "image/player.png"
+		},
+		"shot": {
+			"type": "image",
+			"width": 16,
+			"height": 16,
+			"path": "image/shot.png"
+		},
+		"se": {
+			"type": "audio",
+			"path": "audio/se",
+			"systemId": "sound",
+			"duration": 250
+		},
+		"main": {
+			"type": "script",
+			"path": "script/main.js",
+			"global": true
+		},
+		"none": {
+			"type": "image",
+			"path": "image/none.png",
+			"width": 1,
+			"height": 1
+		},
+		"hand": {
+			"type": "text",
+			"path": "text/hand.xml"
+		},
+		"haarcascade_frontalface_default": {
+			"type": "text",
+			"path": "text/haarcascade_frontalface_default.xml"
+		}
+	},
+	"moduleMainScripts": {
+		"@akashic-extension/akashic-tile": "node_modules/@akashic-extension/akashic-tile/lib/index.js",
+		"opencv": "node_modules/opencv/lib/opencv.js"
+	},
+	"environment": {
+		"sandbox-runtime": "3"
+	},
+	"globalScripts": [
+		"node_modules/@akashic-extension/akashic-tile/lib/Tile.js",
+		"node_modules/@akashic-extension/akashic-tile/lib/index.js",
+		"node_modules/opencv/lib/opencv.js",
+		"global_script/utils.js",
+		"global_script/opencv_454.js"
+	]
+}
